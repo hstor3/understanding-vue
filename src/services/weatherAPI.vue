@@ -1,6 +1,6 @@
 <template>
   <div>
-  {{ weather.weather }}
+    <img :src="`${this.iconSource}`"/>
   </div>
 </template>
 
@@ -9,7 +9,9 @@ export default {
   name: 'weatherAPI',
   data() {
     return {
-      weather: []
+      weather: [],
+      icon: '',
+      iconSource: ''
     }
   },
   methods: {
@@ -18,6 +20,8 @@ export default {
         let name = 'Holland';
         let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + `&appid=${process.env.VUE_APP_APIKEY}&units=imperial`);
         this.weather = await response.json();
+        this.icon = await this.weather.weather[0].icon
+        this.iconSource = 'http://openweathermap.org/img/w/' + `${this.icon}` + '.png'
       } catch (error) {
         console.log(error);
       }
