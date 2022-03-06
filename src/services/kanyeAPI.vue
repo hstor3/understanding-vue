@@ -1,6 +1,6 @@
 <template>
-  <div>
-  {{ quote.quote }}
+  <div class='my-2'>
+  "{{ quote.quote }}"
   </div>
 </template>
 

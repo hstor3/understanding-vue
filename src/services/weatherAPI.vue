@@ -1,5 +1,5 @@
 <template>
-  <div>Weather for: {{weather.name}}, WA</div>
+  <div>Weather for: {{weather.name}}, IL</div>
   <div>{{this.currentTemp}}˚</div>
   <div>
     <img :src="`${this.iconSource}`"/>
@@ -20,7 +20,7 @@ export default {
   methods: {
     async getData() {
       try {
-        let name = 'Seattle';
+        let name = 'Chicago';
         let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + `&appid=${process.env.VUE_APP_APIKEY}&units=imperial`);
         this.weather = await response.json();
         this.icon = this.weather.weather[0].icon;
