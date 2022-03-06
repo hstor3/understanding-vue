@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://hstor3.github.io/understanding-vue/",
   "scripts": {
+    "deploy": "gh-pages -b main -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
