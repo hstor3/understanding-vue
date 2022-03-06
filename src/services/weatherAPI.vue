@@ -1,4 +1,6 @@
 <template>
+  <div>Weather for: {{weather.name}}, WA</div>
+  <div>{{this.currentTemp}}˚</div>
   <div>
     <img :src="`${this.iconSource}`"/>
   </div>
@@ -11,17 +13,19 @@ export default {
     return {
       weather: [],
       icon: '',
-      iconSource: ''
+      iconSource: '',
+      currentTemp: ''
     }
   },
   methods: {
     async getData() {
       try {
-        let name = 'Holland';
+        let name = 'Seattle';
         let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + `&appid=${process.env.VUE_APP_APIKEY}&units=imperial`);
         this.weather = await response.json();
-        this.icon = await this.weather.weather[0].icon
-        this.iconSource = 'http://openweathermap.org/img/w/' + `${this.icon}` + '.png'
+        this.icon = this.weather.weather[0].icon;
+        this.iconSource = 'http://openweathermap.org/img/w/' + `${this.icon}` + '.png';
+        this.currentTemp = Math.round(this.weather.main.temp);
       } catch (error) {
         console.log(error);
       }
