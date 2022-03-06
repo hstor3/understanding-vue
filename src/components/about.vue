@@ -1,5 +1,5 @@
 <template>
-<div class='bg-secondary mt-3 py-2 rounded text-white-50'>
+<div class='bg-secondary mt-2 py-2 rounded text-white-50'>
     <p>
       This is a basic Vue App that contains internal CSS (ew, sorry), bootstrap, Vue, JavaScript, and HTML.
       This site uses the 

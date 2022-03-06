@@ -1,5 +1,5 @@
 <template>
-  <div class='h-25 mb-3 bg-warning text-white rounded'>
+  <div class='h-25 mb-2 bg-warning text-white rounded'>
     <h3 class='weather-container py-3'>
       <weatherAPI />
     </h3>
