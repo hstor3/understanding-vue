@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <button class='btn border' @click="showHideBtn = !showHideBtn">{{showHideBtn ? 'HIDE ABOUT' : 'SHOW ABOUT'}}</button>
+  <div class='mb-2 btn-group-lg'>
+    <button class='btn border' @click="toggleWeatherBtn = !toggleWeatherBtn">{{toggleWeatherBtn ? 'HIDE WEATHER' : 'SHOW WEATHER'}}</button>
+    <button class='btn border' @click="toggleKanyeBtn = !toggleKanyeBtn">{{toggleKanyeBtn ? 'HIDE KANYE' : 'SHOW KANYE'}}</button>
+    <button class='btn border' @click="toggleAboutBtn = !toggleAboutBtn">{{toggleAboutBtn ? 'HIDE ABOUT' : 'SHOW ABOUT'}}</button>
   </div>
-  <chicagoWeather />
-  <kanyeComponent />
-  <aboutSection :class="showHideBtn ? 'p-1' : 'd-none'" />
+  <chicagoWeather :class="toggleWeatherBtn ? '' : 'd-none'" />
+  <kanyeComponent :class="toggleKanyeBtn ? '' : 'd-none'" />
+  <aboutSection :class="toggleAboutBtn ? '' : 'd-none'" />
 </template>
 
 <script>
@@ -21,7 +23,9 @@
     },
     data() {
       return {
-        showHideBtn: false
+        toggleAboutBtn: true,
+        toggleKanyeBtn: true,
+        toggleWeatherBtn: true
       }
     }
   }
