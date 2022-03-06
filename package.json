@@ -1,10 +1,10 @@
 {
   "name": "vue-api",
+  "homepage": "https://hstor3.github.io/understanding-vue/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hstor3.github.io/understanding-vue/",
   "scripts": {
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
