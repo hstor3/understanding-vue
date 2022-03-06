@@ -1,19 +1,17 @@
 <template>
-    <h2>
-        <kanyeAPI />
-        <weatherAPI />
-    </h2>
+  <kanyeComponent />
+  <seattleWeather />
 </template>
 
 <script>
-    import kanyeAPI from '../services/kanyeAPI.vue';
-    import weatherAPI from '../services/weatherAPI.vue';
+  import kanyeComponent from '../components/kanyeQuote.vue';
+  import seattleWeather from '../components/seattleWeather.vue';
 
-    export default {
-        name: 'HomePage',
-            components: {
-                kanyeAPI,
-                weatherAPI
-            }
+  export default {
+    name: 'HomePage',
+    components: {
+      kanyeComponent,
+      seattleWeather
     }
+  }
 </script>
