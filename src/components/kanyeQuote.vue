@@ -23,6 +23,7 @@
 
 <style>
   .quote-container {
-    transform: translate(0%, 20%);
+    padding-top: 10%;
+    z-index: -1;
   }
 </style>
