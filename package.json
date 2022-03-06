@@ -1,7 +1,6 @@
 {
   "name": "vue-api",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://hstor3.github.io/understanding-vue/",
   "scripts": {
     "deploy": "gh-pages -b main -d build",
