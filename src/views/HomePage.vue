@@ -1,10 +1,10 @@
 <template>
+  <div>
+    <button class='btn border' @click="showHideBtn = !showHideBtn">{{showHideBtn ? 'HIDE ABOUT' : 'SHOW ABOUT'}}</button>
+  </div>
   <chicagoWeather />
   <kanyeComponent />
-  <div>
-    <button class='btn border' :class="{toggle: !toggle}" v-on:click='toggleAbout'>{{this.toggle === false ? 'SHOW' : 'HIDE'}}</button>
-  </div>
-  <aboutSection />
+  <aboutSection :class="showHideBtn ? 'p-1' : 'd-none'" />
 </template>
 
 <script>
@@ -21,12 +21,7 @@
     },
     data() {
       return {
-        toggle: false
-      }
-    },
-    methods: {
-      toggleAbout: function toggleAbout() {
-        this.toggle ? true : false
+        showHideBtn: false
       }
     }
   }
