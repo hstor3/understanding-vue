@@ -1,5 +1,5 @@
 <template>
-  <div class='h-50 bg-dark text-white rounded'>
+  <div class='bg-dark text-white rounded'>
     <h3 class='quote-container h-100'>
       <div class='text-danger'>Quotes by Kanye:</div>
       <kanyeAPI />
