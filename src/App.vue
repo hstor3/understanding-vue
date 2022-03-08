@@ -21,7 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: 100vh!important;
-  margin: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
   position: fixed;
   width: -webkit-fill-available;
 }
