@@ -1,27 +1,19 @@
-# vue-api
+# Practicing Vue with Kanye
 
-## Project setup
-```
-npm install
-```
+## [Deployed](https://main.d2jdg0az0y2c2v.amplifyapp.com/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## About
 
-### Compiles and minifies for production
-```
-npm run build
-```
+This was my first app using Vue. I used two APIs and incorporated toggling state. Before the action (coding) began, I roughly followed [instructions](https://itnext.io/how-to-structure-my-vue-js-project-e4468db005ac) on how to structure my files.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Built With
+* VueJs
+* JavaScript
+* HTML
+* CSS
+* Bootstrap
+* [Kanye Rest API](https://kanye.rest/?ref=apitemple)
+* [Open Weather API](https://openweathermap.org/current)
 
 
 https://itnext.io/how-to-structure-my-vue-js-project-e4468db005ac
