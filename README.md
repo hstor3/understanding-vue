@@ -17,4 +17,4 @@ This was my first app using Vue. I used two APIs and incorporated toggling state
 
 ### Deployed With 
 
-> AWS Amplify
+* AWS Amplify
