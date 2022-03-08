@@ -14,6 +14,3 @@ This was my first app using Vue. I used two APIs and incorporated toggling state
 * Bootstrap
 * [Kanye Rest API](https://kanye.rest/?ref=apitemple)
 * [Open Weather API](https://openweathermap.org/current)
-
-
-https://itnext.io/how-to-structure-my-vue-js-project-e4468db005ac
